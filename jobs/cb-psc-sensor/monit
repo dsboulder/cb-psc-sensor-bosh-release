@@ -1,0 +1,5 @@
+check process cbagentd
+  with pidfile /var/run/cbagentd.pid
+  start program "/var/vcap/jobs/cb-psc-sensor/bin/ctl start"
+  stop program "/var/vcap/jobs/cb-psc-sensor/bin/ctl stop"
+  group vcap

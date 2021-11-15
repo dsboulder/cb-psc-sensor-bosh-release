@@ -1,0 +1,13 @@
+---
+name: cb-psc-sensor 
+
+templates:
+  pre-start.erb: bin/pre-start
+  ctl.erb: bin/ctl
+
+packages:
+- cb-psc-sensor
+
+properties:
+  company-code:
+    description: CB provided company-code

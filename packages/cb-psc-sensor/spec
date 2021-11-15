@@ -1,0 +1,8 @@
+---
+name: cb-psc-sensor 
+
+dependencies: []
+
+files:
+- cb-psc-sensor/**/*
+
