@@ -1,6 +1,9 @@
 #!/bin/bash -ex
 
 cd /var/vcap/packages/cb-psc-sensor
+HOSTNAME="<%= spec.name %>-<%= spec.index %>"
+hostname "$HOSTNAME"
+echo -n "$HOSTNAME" > /etc/hostname
 if ! dpkg -s cb-psc-sensor  ; then
   (
     flock -x 200
